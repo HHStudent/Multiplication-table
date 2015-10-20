@@ -23,8 +23,10 @@ Height of multiplication table: 8
 """
 a = int(input("Width of multiplication table: "))
 b = int(input("Height of multiplication table: "))
-w = range(1, b+1)
 y = 0
-for x in w:
+for x in range(1, b+1):
     y += 1
-    print("{0:>3}".format(x*y), end="")
+    arr = []
+    for q in range(1, a+1):
+        arr.append(str(q * y))
+    print("{0}".format((s * y) for s in range(1, a+1)))
