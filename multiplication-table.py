@@ -21,12 +21,15 @@ Height of multiplication table: 8
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
 """
-a = int(input("Width of multiplication table: "))
-b = int(input("Height of multiplication table: "))
-y = 0
-for x in range(1, b+1):
-    y += 1
-    arr = []
-    for q in range(1, a+1):
-        arr.append(str(q * y))
-    print("{0}".format((s * y) for s in range(1, a+1)))
+#w = int(input("Width of multiplication table: "))
+w=6
+h=6
+for x in range(1, h+1):
+    for y in range(1, w+1):
+        print('\n'"{0:>3}".format(x*y))
+"""
+width = int(input("width: "))
+height = int(input("height: "))
+for x in range(height):
+    for y in range(width):
+        print("{0:>3}".format(m) for m in range(0, width))"""
